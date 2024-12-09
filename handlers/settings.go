@@ -29,7 +29,6 @@ import (
 	"zgo.at/zdb"
 	"zgo.at/zhttp"
 	"zgo.at/zhttp/header"
-	"zgo.at/zhttp/mware"
 	"zgo.at/zlog"
 	"zgo.at/zstd/zint"
 	"zgo.at/zstd/zruntime"
@@ -82,14 +81,7 @@ func (h settings) mount(r chi.Router) {
 		}))
 		set.Get("/settings/export/{id}", zhttp.Wrap(h.exportDownload))
 		set.Post("/settings/export/import", zhttp.Wrap(h.exportImport))
-		set.With(mware.Ratelimit(mware.RatelimitOptions{
-			Client: mware.RatelimitIP,
-			Store:  mware.NewRatelimitMemory(),
-			Limit:  rateLimits.export,
-			// TODO(i18n): this should be translated, but no locale here; should
-			// change the ratelimiter to accept a callback.
-			Message: "you can request only one export per hour",
-		})).Post("/settings/export", zhttp.Wrap(h.exportStart))
+		set.Post("/settings/export", zhttp.Wrap(h.exportStart))
 	}
 
 	{ // Admin settings
