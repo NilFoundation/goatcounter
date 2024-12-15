@@ -8,7 +8,7 @@ seconds.</dd>
 <dd>No Referer was sent; this can mean that the user directly accessed the URL
 (e.g. from their bookmarks or typing it), that they disabled sending the Referer
 header, or that the link they clicked on disabled the Referer header with
-<code>rel="noreferer"</code>.</dd>
+<code>rel="noreferrer"</code>.</dd>
 
 
 <dt id="bots">How are bots and crawlers counted? <a href="#bots">§</a></dt>
