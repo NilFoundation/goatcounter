@@ -3,7 +3,7 @@ is by far the easiest way to integrate GoatCounter, but other options are
 available too.
 
 The script is located at http://gc.zgo.at/count.js; although you can [host it
-somewhere else]({{.Base}}/code/countjs-host) if you want, and there are a
+somewhere else]({{.Base}}/code/countjs-host) if you want, and there are
 [stable versions]({{.Base}}/code/countjs-versions) that can use subresource
 integrity.
 
@@ -16,7 +16,7 @@ The script exposes `window.goatcounter` with various settings and methods.
 Settings
 --------
 The easiest way to set these is by setting the `data-goatcounter-settings`
-attribute on the `<script>` tag, but you can also set the on
+attribute on the `<script>` tag, but you can also set them on
 `window.goatcounter`. A few examples are listed below.
 
 The following settings are supported:
