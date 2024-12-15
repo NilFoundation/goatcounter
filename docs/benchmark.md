@@ -23,7 +23,7 @@ The performance depends on two factors: the number of pageviews, and the number
 of unique paths you have. For example a site with 10M pageviews spread out over
 50 paths will be a lot faster than 1M pageviews spread out over 200,000 paths.
 
-The bencharks were run on the following configurations:
+The benchmarks were run on the following configurations:
 
 - Nanode 1GB, 1 core, $5/month
 - Linode 2GB, 1 core, $10/month
