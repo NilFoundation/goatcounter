@@ -57,7 +57,7 @@ list is better for *most* users.
 
 Minimize clicks
 ---------------
-For example for example it shows the “day · month (..)” in the top navigation
+For example, it shows the “day · month (..)” in the top navigation
 as text links quite purposefully, as I find having them there within reach of
 a single click is easier than using a drop-down or some other more advanced UI
 widget. The more advanced widget would probably *look* better, but isn’t
@@ -68,7 +68,7 @@ Useful aggregate statistics rather than not-so-useful detailed statistics
 Chromium is just displayed as “Chrome”, as are Opera, Edge, and a bunch of other
 Chromium-based browsers. Do you *really* care if someone is using Chrome or
 Opera? The reason you care about this information is to be able to make informed
-decisions about browser and platform support. Since it’s the same same engine
+decisions about browser and platform support. Since it’s the same engine
 with the same behaviour, it doesn’t really matter.
 
 Similarly, Firefox on iOS is just displayed as Safari.
